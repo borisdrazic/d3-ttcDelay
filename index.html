@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body>
+    <svg id="ttcChart" width="1300" height="760">
+        <rect width="1400" height="800" style="stroke:black; fill:none;"/>
+        <g transform="translate(-30, 40)">
+            <g class="lines">
+                <polyline class="line1" points="658,20 658,640 650,653 600,653 591,640 591,453 558,453 558,353 491,285 457,150 425,87"/>
+                <polyline class="line3" points="1160,284 1160,137 1260,137"/>
+                <polyline class="line2" points="92,470 125,453 990,453 1025,437 1093,351 1160,284"/>
+                <rect class="line1" x="554" y="445" width="9" height="16"></rect>
+                <rect class="line1" x="570" y="445" width="9" height="16"></rect>
+                <rect class="line1" x="586" y="445" width="9" height="16"></rect>
+                <polyline class="line4" points="657,87 925,87"/>
+            </g>
+            <g class="stations">
+                <g class="line1" id="station-finch" transform="translate(658, 20)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Finch</text>
+                </g>
+                <g class="line1" id="station-north-york-centre" transform="translate(658, 53)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-120" y="4">North York Centre</text>
+                </g>
+                <g class="line1" id="station-york-mills" transform="translate(658, 153)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-70" y="4">York Mills</text>
+                </g>
+                <g class="line1" id="station-lawrence" transform="translate(658, 220)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Lawrence</text>
+                </g>
+                <g class="line1" id="station-eglinton" transform="translate(658, 286.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Eglinton</text>
+                </g>
+                <g class="line1" id="station-davisville" transform="translate(658, 320)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Davisville</text>
+                </g>
+                <g class="line1" id="station-st-clair" transform="translate(658, 353)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">St. Clair</text>
+                </g>
+                <g class="line1" id="station-summerhill" transform="translate(658, 386.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Summerhill</text>
+                </g>
+                <g class="line1" id="station-rosedale" transform="translate(658, 419.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Rosedale</text>
+                </g>
+                <g class="line1" id="station-wellesley" transform="translate(658, 486.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Wellesley</text>
+                </g>
+                <g class="line1" id="station-college" transform="translate(658, 520)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">College</text>
+                </g>
+                <g class="line1" id="station-dundas" transform="translate(658, 553)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Dundas</text>
+                </g>
+                <g class="line1" id="station-quuen" transform="translate(658, 586)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">Queen</text>
+                </g>
+                <g class="line1" id="station-king" transform="translate(658, 620)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="15" y="4">King</text>
+                </g>
+                <g class="line1" id="station-union" transform="translate(625, 653)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-18" y="24">Union</text>
+                </g>
+                <g class="line1" id="station-st-andrew" transform="translate(591.5, 620)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-80" y="4">St. Andrew</text>
+                </g>
+                <g class="line1" id="station-osgoode" transform="translate(591.5, 586)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-69" y="4">Osgoode</text>
+                </g>
+                <g class="line1" id="station-st-patrick" transform="translate(591.5, 553)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-75" y="4">St. Patrick</text>
+                </g>
+                <g class="line1" id="station-queens-park" transform="translate(591.5, 520)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-95" y="4">Queen's Park</text>
+                </g>
+                <g class="line1" id="station-museum" transform="translate(591.5, 487)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-65" y="4">Museum</text>
+                </g>
+                <g class="line1" id="station-dupont" transform="translate(558, 387)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-58" y="4">Dupont</text>
+                </g>
+                <g class="line1" id="station-st-clair-west" transform="translate(558, 353)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-100" y="4">St. Clair West</text>
+                </g>
+                <g class="line1" id="station-eglinton-west" transform="translate(491.5, 286.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-95" y="4">Eglinton West</text>
+                </g>
+                <g class="line1" id="station-glencairn" transform="translate(483, 253)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-72" y="4">Glencairn</text>
+                </g>
+                <g class="line1" id="station-lawrence-west" transform="translate(475, 220)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-105" y="4">Lawrence West</text>
+                </g>
+                <g class="line1" id="station-yorkdale" transform="translate(467, 186)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-67" y="4">Yorkdale</text>
+                </g>
+                <g class="line1" id="station-wilson" transform="translate(458, 153)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-55" y="4">Wilson</text>
+                </g>
+                <g class="line1" id="station-downsview" transform="translate(425, 86)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-82" y="4">Downsview</text>
+                </g>
+                <g class="line2" id="station-kipling" transform="translate(91.5, 470)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-50" y="4">Kipling</text>
+                </g>
+                <g class="line2" id="station-islington" transform="translate(125, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-35, -50) rotate(45)">Islington</text>
+                </g>
+                <g class="line2" id="station-royal-york" transform="translate(158.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-38, 65) rotate(-45)">Royal York</text>
+                </g>
+                <g class="line2" id="station-old-mill" transform="translate(191.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-30, -45) rotate(45)">Old Mill</text>
+                </g>
+                <g class="line2" id="station-jane" transform="translate(225, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-15, 40) rotate(-45)">Jane</text>
+                </g>
+                <g class="line2" id="station-runnymede" transform="translate(258, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-50, -65) rotate(45)">Runnymede</text>
+                </g>
+                <g class="line2" id="station-high-park" transform="translate(291.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-35, 60) rotate(-45)">High Park</text>
+                </g>
+                <g class="line2" id="station-keele" transform="translate(325, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-22, -38) rotate(45)">Keele</text>
+                </g>
+                <g class="line2" id="station-dundas-west" transform="translate(358, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-48, 79) rotate(-45)">Dundas West</text>
+                </g>
+                <g class="line2" id="station-lansdowne" transform="translate(391.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-48, -62) rotate(45)">Landsdowne</text>
+                </g>
+                <g class="line2" id="station-dufferin" transform="translate(424.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-26, 51) rotate(-45)">Dufferin</text>
+                </g>
+                <g class="line2" id="station-ossington" transform="translate(458, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-42, -57) rotate(45)">Ossington</text>
+                </g>
+                <g class="line2" id="station-christie" transform="translate(491.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-26, 51) rotate(-45)">Christie</text>
+                </g>
+                <g class="line2" id="station-bathurst" transform="translate(524.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-32, 57) rotate(-45)">Bathurst</text>
+                </g>
+                <g class="line1 line2" id="station-spadina" transform="translate(558.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-52, -47) rotate(45)">Spadina</text>
+                </g>
+                <g class="line1 line2" id="station-st-george" transform="translate(590.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-52, -55) rotate(45)">St. George</text>
+                </g>
+                <g class="line2" id="station-bay" transform="translate(625, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-11" y="25">Bay</text>
+                </g>
+                <g class="line1 line2" id="station-bloor-yonge" transform="translate(658, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-65, -62) rotate(45)">Bloor-Yonge</text>
+                </g>
+                <g class="line2" id="station-sherbourne" transform="translate(691.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-20" y="25">Sherbourne</text>
+                </g>
+                <g class="line2" id="station-castle-frank" transform="translate(725, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(0, -10) rotate(-45)">Castle Frank</text>
+                </g>
+                <g class="line2" id="station-broadview" transform="translate(758, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(0, -13) rotate(-45)">Broadview</text>
+                </g>
+                <g class="line2" id="station-chester" transform="translate(791.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-8, 20) rotate(45)">Chester</text>
+                </g>
+                <g class="line2" id="station-pape" transform="translate(825, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(0, -13) rotate(-45)">Pape</text>
+                </g>
+                <g class="line2" id="station-donlands" transform="translate(858, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-8, 20) rotate(45)">Donlands</text>
+                </g>
+                <g class="line2" id="station-greenwood" transform="translate(891.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(0, -13) rotate(-45)">Greenwood</text>
+                </g>
+                <g class="line2" id="station-coxwell" transform="translate(925, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(-8, 20) rotate(45)">Coxwell</text>
+                </g>
+                <g class="line2" id="station-woodbine" transform="translate(958, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" transform="translate(0, -13) rotate(-45)">Woodbine</text>
+                </g>
+                <g class="line2" id="station-main-street" transform="translate(989.5, 453.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-3" y="25">Main Street</text>
+                </g>
+                    <g class="line2" id="station-victoria-park" transform="translate(1025, 436.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="19" y="4">Victoria Park</text>
+                </g>
+                <g class="line2" id="station-warden" transform="translate(1091.5, 353)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="23" y="4">Warden</text>
+                </g>
+                <g class="line2" id="station-kennedy" transform="translate(1158, 286.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-80" y="4">Kennedy</text>
+                </g>
+                <g class="line1 line4" id="station-sheppard-yonge" transform="translate(658, 86.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-112" y="3">Sheppard-Yonge</text>
+                </g>
+                <g class="line4" id="station-bayview" transform="translate(757.5, 86.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-24" y="-15">Bayview</text>
+                </g>
+                <g class="line4" id="station-bessarion" transform="translate(807.5, 86.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-28" y="24">Bessarion</text>
+                </g>
+                <g class="line4" id="station-leslie" transform="translate(858.5, 86.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-18" y="-15">Leslie</text>
+                </g>
+                <g class="line4" id="station-don-mills" transform="translate(924.5, 86.5)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-24" y="24">Don Mills</text>
+                </g>
+                <g class="line3" id="station-lawrence-east" transform="translate(1160, 220)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-103" y="4">Lawrence East</text>
+                </g>
+                <g class="line3" id="station-ellesmere" transform="translate(1160, 153)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-75" y="4">Ellesmere</text>
+                </g>
+                <g class="line3" id="station-midland" transform="translate(1192, 137)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-24" y="-14">Midland</text>
+                </g>
+                <g class="line3" id="station-scarborough-centre" transform="translate(1225, 137)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-19" y="25">Scarborough</text>
+                    <text class="station-name" x="-19" y="37">Centre</text>
+                </g>
+                <g class="line3" id="station-mccowan" transform="translate(1258, 137)">
+                    <circle r="5"></circle>
+                    <text class="station-name" x="-16" y="-14">McCowan</text>
+                </g>
+            </g>
+            <g class="codes" transform="translate(750, 530)">
+                <g class="header" transform="translate(0, 0)">
+                    <text class="number">No. </text>
+                    <text x="10" class="description">TTC Delay Code Description</text>
+                    <text x="355" class="line line1">Line 1</text>
+                    <text x="400" class="line line2">Line 2</text>
+                    <text x="445" class="line line3">Line 3</text>
+                    <text x="490" class="line line4">Line 4</text>
+                    <text x="540" class="line total">Total</text>
+                </g>
+                <g class="row" transform="translate(0, 22)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">1. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 40)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">2. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 58)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">3. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 76)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">4. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 94)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">5. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 112)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">6. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 130)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">7. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 148)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">8. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 166)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">9. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <g class="row" transform="translate(0, 184)">
+                    <rect x="-20" y="-13" width="580" height="18"></rect>
+                    <text class="number">10. </text>
+                    <text x="10" class="description"></text>
+                    <text x="355" class="line line1"></text>
+                    <text x="400" class="line line2"></text>
+                    <text x="445" class="line line3"></text>
+                    <text x="490" class="line line4"></text>
+                    <text x="540" class="line total"></text>
+                </g>
+                <line x1="-20" y1="6" x2="560" y2="6"/>
+                <line x1="5" y1="-15" x2="5" y2="190"/>
+                <line x1="333" y1="-15" x2="333" y2="190"/>
+                <line x1="514" y1="-15" x2="514" y2="190"/>
+                <text x="400" y="-20" class="label"></text>
+            </g>
+            <g class="legend" transform="translate(1000, -25)">
+                <defs>
+                    <clipPath id="legendClipPath" transform="rotate(-90)">
+                        <rect width="100" height="100" />
+                    </clipPath>
+                </defs>
+                <rect class="background" width="300" height="97"/>
+                <rect class="rectangle line1" x="17" y="10" width="43" height="9"></rect>
+                <text class="label" x="74" y="18">Line 1 Yonge-University</text>
+                <rect class="rectangle line2" x="17" y="30" width="43" height="9"></rect>
+                <text class="label" x="74" y="38">Line 2 Bloor-Danforth</text>
+                <rect class="rectangle line3" x="17" y="50" width="43" height="9"></rect>
+                <text class="label" x="74" y="58">Line 3 Scarborough (RT)</text>
+                <rect class="rectangle line4" x="17" y="70" width="43" height="9"></rect>
+                <text class="label" x="74" y="78">Line 4 Sheppard</text>
+                <g class="scale" transform="translate(220, 70)">
+                    <circle cx="0" cy="0" r="5" style="fill: black;"></circle>
+                    <circle class="big" cx="0" cy="0" clip-path="url(#legendClipPath)"></circle>
+
+                </g>
+            </g>
+            <g id="gapButton" class="button" transform="translate(40, 30)">
+                <defs>
+                    <polygon id="wheelGap" class="icon whele" points="0,0 5,0 5,5 0,5" >
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 2.5 2.5" to="360 2.5 2.5" dur="5s" repeatCount="indefinite"/>
+                    </polygon>
+                </defs>
+                <rect x="0" y="0" width="120" height="55"/>
+                <path class="icon" d="M0 15 C 0 0, 20 0, 20 15" stroke="black" fill="transparent"/>
+                <polyline class="icon" points="120,55 0,55 0,15"/>
+                <polyline class="icon" points="5,42 50,42 50,32.5 40,18 5,18"/>
+                <polyline class="icon" points="15,39 15,25 25,25 25,39"/>
+                <polyline class="icon" points="5,25 10,25 10,32 5,32"/>
+                <polyline class="icon" points="30,25 38,25 38,32 30,32 30,25"/>
+                <polyline class="icon" points="120,42 95,42 95,18 120,18"/>
+                <polyline class="icon" points="100,32 100,25 108,25 108,32 100,32"/>
+                <polyline class="icon" points="113,39 113,25 120,25"/>
+                <use xlink:href="#wheelGap" x="40" y="45.5"/>
+                <use xlink:href="#wheelGap" x="25" y="45.5"/>
+                <use xlink:href="#wheelGap" x="10" y="45.5"/> 
+                <use xlink:href="#wheelGap" x="98" y="45.5"/>
+                <use xlink:href="#wheelGap" x="113" y="45.5"/>
+                <polyline class="icon" points="5,53 5,55"/>
+                <polyline class="icon" points="15,53 15,55"/>
+                <polyline class="icon" points="25,53 25,55"/>
+                <polyline class="icon" points="35,53 35,55"/>
+                <polyline class="icon" points="45,53 45,55"/>
+                <polyline class="icon" points="55,53 55,55"/>
+                <polyline class="icon" points="65,53 65,55"/>
+                <polyline class="icon" points="75,53 75,55"/>
+                <polyline class="icon" points="85,53 85,55"/>
+                <polyline class="icon" points="95,53 95,55"/>
+                <polyline class="icon" points="105,53 105,55"/>
+                <polyline class="icon" points="115,53 115,55"/>
+            </g>
+            <g id="delayButton" class="button selected" transform="translate(180, 30)">
+                <defs>
+                    <polygon id="wheelDelay" class="icon whele" points="0,0 5,0 5,5 0,5" >
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 2.5 2.5" to="360 2.5 2.5" dur="5s" repeatCount="indefinite"/>
+                    </polygon>
+                    <polygon id="minute" class="icon" points="-1,3 -1,-20 1,-20 1,3" >
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 0 0" to="360 0 0" dur="5s" repeatCount="indefinite"/>
+                    </polygon>
+                    <polygon id="hour" class="icon" points="-1,3 -1,-10 1,-10 1,3" >
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 0 0" to="360 0 0" dur="60s" repeatCount="indefinite"/>
+                    </polygon>
+                </defs>
+                <rect width="120" height="55"/>
+                <path class="icon" d="M0 15 C 0 0, 20 0, 20 15" stroke="black" fill="transparent"/>
+                <polyline class="icon" points="120,55 0,55 0,15"/>
+                <polyline class="icon" points="5,42 50,42 50,32.5 40,18 5,18"/>
+                <polyline class="icon" points="15,39 15,25 25,25 25,39"/>
+                <polyline class="icon" points="5,25 10,25 10,32 5,32"/>
+                <polyline class="icon" points="30,25 38,25 38,32 30,32 30,25"/>
+                <circle class="icon" cx="92" cy="27" r="23"/>
+                <line class="icon" x1="92" x2="92" y1="4" y2="8"/>
+                <line class="icon" x1="92" x2="92" y1="4" y2="8"/>
+                <line class="icon" x1="111" x2="115" y1="27" y2="27"/>
+                <line class="icon" x1="92" x2="92" y1="50" y2="46"/>
+                <line class="icon" x1="69" x2="73" y1="27" y2="27"/>
+                <use xlink:href="#minute" x="92" y="27"/>
+                <use xlink:href="#hour" x="92" y="27"/>
+                <use xlink:href="#wheelDelay" x="40" y="45.5"/>
+                <use xlink:href="#wheelDelay" x="25" y="45.5"/>
+                <use xlink:href="#wheelDelay" x="10" y="45.5"/>
+                <polyline class="icon" points="5,53 5,55"/>
+                <polyline class="icon" points="15,53 15,55"/>
+                <polyline class="icon" points="25,53 25,55"/>
+                <polyline class="icon" points="35,53 35,55"/>
+                <polyline class="icon" points="45,53 45,55"/>
+                <polyline class="icon" points="55,53 55,55"/>
+                <polyline class="icon" points="65,53 65,55"/>
+                <polyline class="icon" points="75,53 75,55"/>
+                <polyline class="icon" points="85,53 85,55"/>
+                <polyline class="icon" points="95,53 95,55"/>
+                <polyline class="icon" points="105,53 105,55"/>
+                <polyline class="icon" points="115,53 115,55"/>
+            </g>
+            <g transform="translate(70, 125)">
+                <g class="yearIcon" transform="translate(0, 0)">
+                    <rect class="selected" width="50" height="30" data-year="2014"/>
+                    <text x="25" y="20">2014</text>
+                </g>
+                <g class="yearIcon" transform="translate(70, 0)">
+                    <rect class="selected" width="50" height="30" data-year="2015"/>
+                    <text x="25" y="20">2015</text>
+                </g>
+                <g class="yearIcon" transform="translate(140, 0)">
+                    <rect class="selected" width="50" height="30" data-year="2016"/>
+                    <text x="25" y="20">2016</text>
+                </g>
+            </g>
+            <g transform="translate(80, 200)">
+                <defs>
+                    <g id="monthIcon">
+                        <rect x="-20" y="-20" width="40" height="40" style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                        <rect class="top" x="-20" y="-20" width="40" height="8" style="fill: #316786; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                        <line x1="-15" x2="-15" y1="-25" y2="-20" style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                        <line x1="-5" x2="-5" y1="-25" y2="-20" style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                        <line x1="5" x2="5" y1="-25" y2="-20" style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                        <line x1="15" x2="15" y1="-25" y2="-20" style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 4; stroke: #316786;"/>
+                    </g>
+                </defs>
+                <g class="monthIcon" transform="translate(0, 0)">                
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="0"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Jan</text>
+                </g>
+                <g class="monthIcon" transform="translate(60, 0)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="1"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Feb</text>
+                </g>
+                <g class="monthIcon" transform="translate(120, 0)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="2"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Mar</text>
+                </g>
+                <g class="monthIcon" transform="translate(180, 0)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="3"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Apr</text>
+                </g>
+                <g class="monthIcon" transform="translate(0, 60)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="4"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">May</text>
+                </g>
+                <g class="monthIcon" transform="translate(60, 60)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="5"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Jun</text>
+                </g>
+                <g class="monthIcon" transform="translate(120, 60)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="6"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Jul</text>
+                </g>
+                <g class="monthIcon" transform="translate(180, 60)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="7"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Aug</text>
+                </g>
+                <g class="monthIcon" transform="translate(0, 120)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="8"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Sep</text>
+                </g>
+                <g class="monthIcon" transform="translate(60, 120)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="9"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Oct</text>
+                </g>
+                <g class="monthIcon" transform="translate(120, 120)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="10"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Nov</text>
+                </g>
+                <g class="monthIcon" transform="translate(180, 120)">
+                    <rect class="selected" x="-20" y="-20" width="40" height="40" data-month="11"></rect>
+                    <use xlink:href="#monthIcon"/>
+                    <text y="9">Dec</text>
+                </g>
+            </g>
+            <g id="hourChart" transform="translate(100, 550)">
+            </g>
+            <g id="dayChart" transform="translate(800, 200)">
+            </g>
+        </g>	    
+    </svg>
+
+<script type="text/javascript" src="js/lib/d3.v4.min.js"></script>
+<script type="text/javascript" src="js/dataService.js"></script>
+<script type="text/javascript" src="js/ttcChart.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

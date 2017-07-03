@@ -1,0 +1,164 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0px;
+  background-color: #282E34; }
+
+#ttcChart text {
+  font-size: 12pt;
+  fill: #777;
+  stroke: none;
+  pointer-events: none;
+  cursor: default; }
+#ttcChart .button {
+  pointer-events: all;
+  cursor: pointer; }
+  #ttcChart .button .icon, #ttcChart .button rect {
+    stroke: #316786;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 1; }
+  #ttcChart .button .icon {
+    fill: none;
+    stroke-width: 2; }
+  #ttcChart .button rect {
+    transition: fill 0.3s;
+    fill: #282E34;
+    stroke-width: 4; }
+  #ttcChart .button:hover rect {
+    fill: #3f84ab; }
+  #ttcChart .button.selected rect {
+    fill: #80b3d0; }
+  #ttcChart .button.selected:hover rect {
+    fill: #4891bc; }
+#ttcChart .stations circle {
+  opacity: 0.75; }
+#ttcChart polyline {
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  opacity: 0.4; }
+  #ttcChart polyline.icon {
+    stroke-width: 2; }
+  #ttcChart polyline.line1 {
+    stroke: #FFCC29; }
+  #ttcChart polyline.line2 {
+    stroke: #00A859; }
+  #ttcChart polyline.line3 {
+    stroke: #00AFEF; }
+  #ttcChart polyline.line4 {
+    stroke: #A8518A; }
+#ttcChart rect.line1 {
+  fill: #FFCC29; }
+#ttcChart .legend .background {
+  fill: none;
+  stroke: #316786;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 4; }
+#ttcChart .legend .label {
+  font-size: 9pt;
+  fill: #777;
+  stroke: none; }
+#ttcChart .legend .rectangle.line1 {
+  fill: #FFCC29; }
+#ttcChart .legend .rectangle.line2 {
+  fill: #00A859; }
+#ttcChart .legend .rectangle.line3 {
+  fill: #00AFEF; }
+#ttcChart .legend .rectangle.line4 {
+  fill: #A8518A; }
+#ttcChart .legend .scale circle.big {
+  fill: #316786;
+  opacity: 0.8; }
+#ttcChart .legend .scale .x-axis path {
+  stroke: #777; }
+#ttcChart .legend .scale .tick line {
+  stroke: #777; }
+#ttcChart .legend .scale .tick text {
+  font-size: 9pt;
+  text-anchor: middle; }
+#ttcChart .station-name {
+  font-size: 9pt; }
+#ttcChart #hourChart .tick line, #ttcChart #dayChart .tick line {
+  stroke: #777; }
+#ttcChart #hourChart .line, #ttcChart #hourChart .bar, #ttcChart #dayChart .line, #ttcChart #dayChart .bar {
+  fill: none;
+  stroke: #316786;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 2; }
+  #ttcChart #hourChart .line.line1, #ttcChart #hourChart .bar.line1, #ttcChart #dayChart .line.line1, #ttcChart #dayChart .bar.line1 {
+    stroke: #FFCC29; }
+  #ttcChart #hourChart .line.line2, #ttcChart #hourChart .bar.line2, #ttcChart #dayChart .line.line2, #ttcChart #dayChart .bar.line2 {
+    stroke: #00A859; }
+  #ttcChart #hourChart .line.line3, #ttcChart #hourChart .bar.line3, #ttcChart #dayChart .line.line3, #ttcChart #dayChart .bar.line3 {
+    stroke: #00AFEF; }
+  #ttcChart #hourChart .line.line4, #ttcChart #hourChart .bar.line4, #ttcChart #dayChart .line.line4, #ttcChart #dayChart .bar.line4 {
+    stroke: #A8518A; }
+#ttcChart #hourChart .bar, #ttcChart #dayChart .bar {
+  fill: #316786; }
+#ttcChart #hourChart .y-axis path, #ttcChart #dayChart .y-axis path {
+  stroke: #777; }
+#ttcChart #hourChart .y-axis text, #ttcChart #dayChart .y-axis text {
+  text-anchor: end; }
+  #ttcChart #hourChart .y-axis text.label, #ttcChart #dayChart .y-axis text.label {
+    text-anchor: start; }
+#ttcChart #hourChart .x-axis text, #ttcChart #dayChart .x-axis text {
+  text-anchor: middle; }
+  #ttcChart #hourChart .x-axis text.label, #ttcChart #dayChart .x-axis text.label {
+    text-anchor: end; }
+#ttcChart #hourChart text, #ttcChart #dayChart text {
+  font-size: 9pt;
+  text-anchor: start; }
+#ttcChart .monthIcon text, #ttcChart .yearIcon text {
+  fill: #316786;
+  text-anchor: middle;
+  font-weight: bold; }
+#ttcChart .monthIcon rect {
+  transition: fill 0.3s;
+  fill: #282E34;
+  cursor: pointer; }
+  #ttcChart .monthIcon rect:hover {
+    fill: #3f84ab; }
+  #ttcChart .monthIcon rect.selected {
+    fill: #80b3d0; }
+    #ttcChart .monthIcon rect.selected:hover {
+      fill: #4891bc; }
+#ttcChart .yearIcon rect {
+  transition: fill 0.3s;
+  fill: #282E34;
+  stroke: #316786;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 4;
+  cursor: pointer; }
+  #ttcChart .yearIcon rect:hover {
+    fill: #3f84ab; }
+  #ttcChart .yearIcon rect.selected {
+    fill: #80b3d0; }
+    #ttcChart .yearIcon rect.selected:hover {
+      fill: #4891bc; }
+#ttcChart .codes line {
+  stroke: #777;
+  stroke-width: 2; }
+#ttcChart .codes .row rect {
+  fill: #282E34; }
+  #ttcChart .codes .row rect:hover {
+    fill: #234a61; }
+#ttcChart .codes text {
+  font-size: 9pt; }
+  #ttcChart .codes text.number {
+    text-anchor: end; }
+  #ttcChart .codes text.line {
+    text-anchor: middle; }
+    #ttcChart .codes text.line.line1 {
+      fill: #FFCC29; }
+    #ttcChart .codes text.line.line2 {
+      fill: #00A859; }
+    #ttcChart .codes text.line.line3 {
+      fill: #00AFEF; }
+    #ttcChart .codes text.line.line4 {
+      fill: #A8518A; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,339 @@
+$iconColor: #316786;
+$iconColorHover: lighten($iconColor, 10%);
+$iconColorSelected: lighten($iconColor, 30%);
+$iconColorSelectedHover: lighten($iconColor, 15%);
+$line1Color: #FFCC29;
+$line2Color: #00A859;
+$line3Color: #00AFEF;
+$line4Color: #A8518A;
+$textColor: #777;
+$lineGraphLineColor: #316786;
+$lineGraphTickColor: #777;
+$bcgColor: #282E34;
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0px;
+    background-color: $bcgColor;
+}
+
+#ttcChart {
+    text {
+        font-size: 12pt;
+        fill: $textColor;
+        stroke: none;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .button {
+        pointer-events: all;
+        cursor: pointer;
+
+        .icon, rect {
+            stroke: $iconColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            opacity: 1;
+        }
+
+        .icon {
+            fill: none;
+            stroke-width: 2;
+        }
+
+        rect {
+            transition: fill 0.3s;
+            fill: $bcgColor;
+            stroke-width: 4;
+        }
+
+        &:hover {
+            rect {
+                fill: $iconColorHover;
+            }
+        }
+
+        &.selected {
+            rect {
+                fill: $iconColorSelected;
+            }
+
+            &:hover {
+                rect {
+                    fill: $iconColorSelectedHover;
+                }
+            }
+        }
+    }
+
+    .stations {
+        circle {
+            opacity: 0.75;
+        }
+    }
+    
+    polyline {
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        opacity: 0.4;
+
+        &.icon {
+            stroke-width: 2;
+        }
+
+        &.line1 {
+            stroke: $line1Color;    
+        }
+
+        &.line2 {
+            stroke: $line2Color;
+        }
+
+        &.line3 {
+            stroke: $line3Color
+        }
+
+        &.line4 {
+            stroke: $line4Color;
+        }
+    }
+
+    rect {
+        &.line1 {
+            fill: $line1Color;
+        }
+    }
+
+    .legend {
+        .background {
+            fill: none;
+            stroke: $iconColor;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-width: 4;
+        }
+
+        .label {
+            font-size: 9pt;
+            fill: $textColor;
+            stroke: none;
+        }
+
+        .rectangle {
+            &.line1 {
+                fill: $line1Color;
+            }
+
+            &.line2 {
+                fill: $line2Color;
+            }
+
+            &.line3 {
+                fill: $line3Color
+            }
+
+            &.line4 {
+                fill: $line4Color;
+            }
+        }
+
+        .scale {
+            circle {
+                &.big {
+                    fill: $iconColor;
+                    opacity: 0.8;
+                }
+            }
+            
+            
+            .x-axis path {
+                stroke: $textColor;
+            }
+            .tick {
+                line {
+                    stroke: $textColor;
+                }
+                text {
+                    font-size: 9pt;
+                    text-anchor: middle;
+                }
+            }
+        }
+    }
+
+    .station-name {
+        font-size: 9pt;
+    }
+
+    #hourChart, #dayChart {
+        .tick {
+            line {
+                stroke: $lineGraphTickColor;
+            }
+        }
+
+        .line, .bar {
+            fill: none;
+            stroke: $lineGraphLineColor;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-width: 2;
+
+            &.line1 {
+            stroke: $line1Color;    
+            }
+
+            &.line2 {
+                stroke: $line2Color;
+            }
+
+            &.line3 {
+                stroke: $line3Color
+            }
+
+            &.line4 {
+                stroke: $line4Color;
+            }
+        }
+
+        .bar {
+            fill: $lineGraphLineColor;
+        }
+
+        .y-axis {
+            path {
+                stroke: $lineGraphTickColor;
+            }
+
+            text {
+                text-anchor: end;
+
+                &.label {
+                    text-anchor: start;
+                }
+            }
+        }
+
+        .x-axis {
+            text {
+                text-anchor: middle;
+
+                &.label {
+                    text-anchor: end;
+                }
+            }
+        }
+
+        text {
+            font-size: 9pt;
+            text-anchor: start;
+        }
+    }
+
+    .monthIcon, .yearIcon {
+        text {
+            fill: $iconColor;
+            text-anchor: middle;
+            font-weight: bold;
+        }
+    }
+
+    .monthIcon {
+        rect {
+            transition: fill 0.3s;
+            fill: $bcgColor;
+            cursor: pointer;
+
+            &:hover {
+                fill: $iconColorHover;
+            }
+
+            &.selected {
+                fill: $iconColorSelected;
+
+                &:hover {
+                    fill: $iconColorSelectedHover;
+                }
+            }
+        }
+    }
+
+    .yearIcon {
+        rect {
+            transition: fill 0.3s;
+            fill: $bcgColor;
+            stroke: $iconColor;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-width: 4;
+            cursor: pointer;
+
+            &:hover {
+                fill: $iconColorHover;
+            }
+
+            &.selected {
+                fill: $iconColorSelected;
+
+                &:hover {
+                    fill: $iconColorSelectedHover;
+                }
+            }
+        }
+    }
+
+    .codes {
+        line {
+            stroke: $textColor;
+            stroke-width: 2;
+        }
+        .row {
+            rect {
+                fill: $bcgColor;
+
+                &:hover {
+                    fill: darken($iconColor, 10%);
+                }
+            }
+        }
+        text {
+            font-size: 9pt;
+
+            &.number {
+                text-anchor: end;
+            }
+
+            &.line {
+                text-anchor: middle;
+
+                &.line1 {
+                    fill: $line1Color;
+                }
+
+                &.line2 {
+                    fill: $line2Color;
+                }
+
+                &.line3 {
+                    fill: $line3Color;
+                }
+
+                &.line4 {
+                    fill: $line4Color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
